@@ -1,0 +1,13 @@
+<div class="question">
+  <div class="card" *ngFor = "let question of questions;">
+    <div class="card-header">
+      {{question.ques}} 
+    </div>
+    <div class="card-block">
+      <p class="card-text">
+        <app-survey-circle [question] = "question"></app-survey-circle> 
+      </p>
+    </div> 
+  </div>
+  <br>
+</div>
